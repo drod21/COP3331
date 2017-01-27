@@ -26,7 +26,10 @@ class Employee {
         
     }
     
-    Employee(string empName, int monthSalary) : name{empName}, salary{monthSalary} {
+    Employee(string empName, int monthSalary) {
+        
+        name = empName;
+        salary = monthSalary;
         
     }
     
