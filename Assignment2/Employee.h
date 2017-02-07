@@ -1,7 +1,8 @@
 /* 
  * Derek Rodriguez
  * Contains Employee class
- *
+ * Also inline functions, default constructor, and constructor with parameters for
+ * employee name and monthly salary
  */
 
 #include <iostream>
@@ -34,7 +35,7 @@ class Employee {
     }
     
     void setSalary(int mSalary) {
-        
+        // Increment salary by adding to previous definition
         salary += mSalary;
         
     }
