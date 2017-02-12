@@ -1,12 +1,10 @@
-/*
- * Derek Rodriguez
- * U37516832
- * 2/12/17
- *
- * Implementation program to add the class function definitions,
- * For constructor, overloading, simplification, and mutator function.
- *
- */
+//
+//  FractImp.cpp
+//  Assign3
+//
+//  Created by Derek Rodriguez on 2/11/17.
+//  Copyright © 2017 Derek Rodriguez. All rights reserved.
+//
 
 #include <iostream>
 #include "Fraction.h"
@@ -20,11 +18,10 @@ Fraction::Fraction() {
     
 }
 
-
 // Simplify via a for loop
 void Fraction::simplify() {
     
-    // Loop through and divide if no remainder
+    //Loop through and divide if no remainder
     // Divide by i if and only if number is divisible by both
     // numerator and denominator
     
@@ -32,10 +29,11 @@ void Fraction::simplify() {
         
         if ((denominator % i == 0) && (numerator % i == 0)) {
             
-            denominator /= i;
-            numerator /= i;
+            numerator = numerator / i;
+            denominator = denominator / i;
             
         }
+        
     }
     
 }
@@ -56,10 +54,47 @@ Fraction Fraction::operator+ (const Fraction &f) {
     
     Fraction temp;
     
-    // Multiply both numerators by denominators and add
-    temp.numerator = numerator * f.denominator + f.numerator * denominator;
-    temp.denominator = denominator * f.denominator;
+    // Check if denominators are common denominators
+    if (denominator == f.denominator) {
+        
+        temp.numerator = numerator + f.numerator;
+        temp.denominator = denominator;
+        
+    } else {
+        
+        // Multiply both numerators by denominators and add
+        temp.numerator = numerator * f.denominator + f.numerator * denominator;
+        temp.denominator = denominator * f.denominator;
+        
+    }
+    
     temp.simplify();
+    
+    return temp;
+    
+}
+
+// Overloaded operator for subtraction
+Fraction Fraction::operator- (const Fraction &f) {
+    
+    Fraction temp;
+    
+    // Check if denominators are common denominators
+    if (denominator == f.denominator) {
+        
+        temp.numerator = numerator - f.numerator;
+        temp.denominator = denominator;
+        
+    } else {
+        
+        // Multiply both numerators by denominators and subtract
+        temp.numerator = numerator * f.denominator - f.numerator * denominator;
+        temp.denominator = denominator * f.denominator;
+        
+    }
+    
+    temp.simplify();
+    
     
     return temp;
     
@@ -78,19 +113,6 @@ Fraction Fraction::operator* (const Fraction &f) {
     return temp;
 }
 
-// Overloaded operator for subtraction
-Fraction Fraction::operator- (const Fraction &f) {
-    
-    Fraction temp;
-    
-    // Multiply both numerators by denominators and subtract
-    temp.numerator = numerator * f.denominator - f.numerator * denominator;
-    temp.denominator = denominator * f.denominator;
-    temp.simplify();
-    
-    return temp;
-    
-}
 
 // Overloaded operator for division
 Fraction Fraction::operator/ (const Fraction &f) {
@@ -103,7 +125,7 @@ Fraction Fraction::operator/ (const Fraction &f) {
     temp.simplify();
     
     return temp;
-
+    
 }
 
 
@@ -125,6 +147,7 @@ istream& operator>> (istream& is, Fraction& fraction) {
     is >> fraction.numerator; //get the numerator
     is >> ch; //read and discard the '/'
     is >> fraction.denominator; //get the denominator
+    
     return is;
     
 }
