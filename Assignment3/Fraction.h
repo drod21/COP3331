@@ -1,10 +1,12 @@
-//
-//  Fraction.h
-//  Assign3
-//
-//  Created by Derek Rodriguez on 2/11/17.
-//  Copyright © 2017 Derek Rodriguez. All rights reserved.
-//
+/*
+ * Derek Rodriguez
+ * U37516832
+ * 2/12/17
+ *
+ * Class definition file, containing private and public members, 
+ * With the member function definitions, and accessor functions.
+ *
+ */
 
 #ifndef Fraction_h
 #define Fraction_h

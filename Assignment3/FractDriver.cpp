@@ -1,10 +1,13 @@
-//
-//  main.cpp
-//  Assign3
-//
-//  Created by Derek Rodriguez on 2/11/17.
-//  Copyright © 2017 Derek Rodriguez. All rights reserved.
-//
+/* 
+ * Derek Rodriguez
+ * U37516832
+ * 2/12/17
+ *
+ * Driver program to receive user input to set the two fractions,
+ * And perform arithmetic (add, subtract, multiply, divide).
+ * Prints the output.
+ *
+ */
 
 #include <iostream>
 #include "Fraction.h"
@@ -15,8 +18,6 @@ int main() {
     Fraction f1;
     Fraction f2;
     Fraction f3;
-    
-    int num, denom, num2, denom2;
     
     cout << "Enter the first fraction in the form a / b: " << endl;
     
@@ -30,25 +31,29 @@ int main() {
     
     cout << "Fraction 2: " << f2 << endl;
     
+    // Add and store in object f3
+    
     f3 = f1 + f2;
     
     cout << f1 << " + " << f2 << " = " << f3 << endl;
+    
+    // Subtract and store in object f3
     
     f3 = f1 - f2;
     
     cout << f1 << " - " << f2 << " = " << f3 << endl;
     
+    // Multiply and store in object f3
+    
     f3 = f1 * f2;
     
     cout << f1 << " * " << f2 << " = " << f3 << endl;
     
+    // Divide and store in object f3
+    
     f3 = f1 / f2;
     
     cout << "(" << f1 << ")" << " / " << "(" << f2 << ")" << " = " << f3 << endl;
-    
-    
-   
-    
     
     return 0;
 }
