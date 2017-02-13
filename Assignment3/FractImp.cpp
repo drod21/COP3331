@@ -1,10 +1,12 @@
-//
-//  FractImp.cpp
-//  Assign3
-//
-//  Created by Derek Rodriguez on 2/11/17.
-//  Copyright © 2017 Derek Rodriguez. All rights reserved.
-//
+/*
+ * Derek Rodriguez
+ * U37516832
+ * 2/12/17
+ *
+ * Implementation program to add the class function definitions,
+ * For constructor, overloading, simplification, and mutator function.
+ *
+ */
 
 #include <iostream>
 #include "Fraction.h"
@@ -129,7 +131,7 @@ Fraction Fraction::operator/ (const Fraction &f) {
 }
 
 
-
+// Overload the operator <<
 ostream& operator << (ostream& os, const Fraction& fraction) {
     
     //note that we print out a / as it is simply easier to do so!
@@ -139,7 +141,7 @@ ostream& operator << (ostream& os, const Fraction& fraction) {
     
 }
 
-//overload the operator >>
+// Overload the operator >>
 istream& operator>> (istream& is, Fraction& fraction) {
     
     char ch;
