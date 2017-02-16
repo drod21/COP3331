@@ -19,6 +19,8 @@ int main() {
     Fraction f2;
     Fraction f3;
     
+    // Get user input for fractions using overloaded >> operator
+    
     cout << "Enter the first fraction in the form a / b: " << endl;
     
     cin >> f1;
@@ -26,6 +28,8 @@ int main() {
     cout << "Enter the second fraction in the form a / b: " << endl;
     
     cin >> f2;
+    
+    // Display fractions using overloaded << operator
     
     cout << "Fraction 1: " << f1 << endl;
     
