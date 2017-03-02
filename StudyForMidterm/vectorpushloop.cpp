@@ -40,7 +40,7 @@ int main() {
     }
     
     cout << "Removing items in the vector: " << endl;
-    int i = 0;
+
     
     while (!vec.empty()) {
         
