@@ -27,7 +27,7 @@ void movieInput(Movie &newMovies);
 void movieOutput(vector<Movie> movies, size_t size);
 
 int main() {
-    Movie temp;
+   Movie temp;
     vector<Movie> movies;
     char esc;
     

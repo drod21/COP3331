@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC782F291E4F2634003E5A83 /* FractDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC782F281E4F2634003E5A83 /* FractDriver.cpp */; };
-		AC782F311E4F2693003E5A83 /* FractImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC782F301E4F2693003E5A83 /* FractImp.cpp */; };
+		AC844D561E740CAA007E47F0 /* EssayDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC844D551E740CAA007E47F0 /* EssayDriver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AC782F231E4F2634003E5A83 /* CopyFiles */ = {
+		AC844D501E740CAA007E47F0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AC782F251E4F2634003E5A83 /* Assign3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assign3; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC782F281E4F2634003E5A83 /* FractDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractDriver.cpp; sourceTree = "<group>"; };
-		AC782F2F1E4F2676003E5A83 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
-		AC782F301E4F2693003E5A83 /* FractImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FractImp.cpp; sourceTree = "<group>"; };
+		AC844D521E740CAA007E47F0 /* Assignment4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment4; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC844D551E740CAA007E47F0 /* EssayDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EssayDriver.cpp; sourceTree = "<group>"; };
+		AC844D5D1E740CDD007E47F0 /* GradedActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradedActivity.h; sourceTree = "<group>"; };
+		AC844D5F1E740D52007E47F0 /* Essay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Essay.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AC782F221E4F2634003E5A83 /* Frameworks */ = {
+		AC844D4F1E740CAA007E47F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,98 +40,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC782F1C1E4F2634003E5A83 = {
+		AC844D491E740CAA007E47F0 = {
 			isa = PBXGroup;
 			children = (
-				AC782F271E4F2634003E5A83 /* Assign3 */,
-				AC782F261E4F2634003E5A83 /* Products */,
+				AC844D541E740CAA007E47F0 /* Assignment4 */,
+				AC844D531E740CAA007E47F0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AC782F261E4F2634003E5A83 /* Products */ = {
+		AC844D531E740CAA007E47F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC782F251E4F2634003E5A83 /* Assign3 */,
+				AC844D521E740CAA007E47F0 /* Assignment4 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC782F271E4F2634003E5A83 /* Assign3 */ = {
+		AC844D541E740CAA007E47F0 /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
-				AC782F281E4F2634003E5A83 /* FractDriver.cpp */,
-				AC782F2F1E4F2676003E5A83 /* Fraction.h */,
-				AC782F301E4F2693003E5A83 /* FractImp.cpp */,
+				AC844D551E740CAA007E47F0 /* EssayDriver.cpp */,
+				AC844D5F1E740D52007E47F0 /* Essay.h */,
+				AC844D5D1E740CDD007E47F0 /* GradedActivity.h */,
 			);
-			path = Assign3;
+			path = Assignment4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC782F241E4F2634003E5A83 /* Assign3 */ = {
+		AC844D511E740CAA007E47F0 /* Assignment4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC782F2C1E4F2634003E5A83 /* Build configuration list for PBXNativeTarget "Assign3" */;
+			buildConfigurationList = AC844D591E740CAA007E47F0 /* Build configuration list for PBXNativeTarget "Assignment4" */;
 			buildPhases = (
-				AC782F211E4F2634003E5A83 /* Sources */,
-				AC782F221E4F2634003E5A83 /* Frameworks */,
-				AC782F231E4F2634003E5A83 /* CopyFiles */,
+				AC844D4E1E740CAA007E47F0 /* Sources */,
+				AC844D4F1E740CAA007E47F0 /* Frameworks */,
+				AC844D501E740CAA007E47F0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Assign3;
-			productName = Assign3;
-			productReference = AC782F251E4F2634003E5A83 /* Assign3 */;
+			name = Assignment4;
+			productName = Assignment4;
+			productReference = AC844D521E740CAA007E47F0 /* Assignment4 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AC782F1D1E4F2634003E5A83 /* Project object */ = {
+		AC844D4A1E740CAA007E47F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Derek Rodriguez";
 				TargetAttributes = {
-					AC782F241E4F2634003E5A83 = {
+					AC844D511E740CAA007E47F0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = AC782F201E4F2634003E5A83 /* Build configuration list for PBXProject "Assign3" */;
+			buildConfigurationList = AC844D4D1E740CAA007E47F0 /* Build configuration list for PBXProject "Assignment4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AC782F1C1E4F2634003E5A83;
-			productRefGroup = AC782F261E4F2634003E5A83 /* Products */;
+			mainGroup = AC844D491E740CAA007E47F0;
+			productRefGroup = AC844D531E740CAA007E47F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC782F241E4F2634003E5A83 /* Assign3 */,
+				AC844D511E740CAA007E47F0 /* Assignment4 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AC782F211E4F2634003E5A83 /* Sources */ = {
+		AC844D4E1E740CAA007E47F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC782F291E4F2634003E5A83 /* FractDriver.cpp in Sources */,
-				AC782F311E4F2693003E5A83 /* FractImp.cpp in Sources */,
+				AC844D561E740CAA007E47F0 /* EssayDriver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AC782F2A1E4F2634003E5A83 /* Debug */ = {
+		AC844D571E740CAA007E47F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -179,7 +177,7 @@
 			};
 			name = Debug;
 		};
-		AC782F2B1E4F2634003E5A83 /* Release */ = {
+		AC844D581E740CAA007E47F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,14 +217,14 @@
 			};
 			name = Release;
 		};
-		AC782F2D1E4F2634003E5A83 /* Debug */ = {
+		AC844D5A1E740CAA007E47F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		AC782F2E1E4F2634003E5A83 /* Release */ = {
+		AC844D5B1E740CAA007E47F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -236,24 +234,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC782F201E4F2634003E5A83 /* Build configuration list for PBXProject "Assign3" */ = {
+		AC844D4D1E740CAA007E47F0 /* Build configuration list for PBXProject "Assignment4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC782F2A1E4F2634003E5A83 /* Debug */,
-				AC782F2B1E4F2634003E5A83 /* Release */,
+				AC844D571E740CAA007E47F0 /* Debug */,
+				AC844D581E740CAA007E47F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC782F2C1E4F2634003E5A83 /* Build configuration list for PBXNativeTarget "Assign3" */ = {
+		AC844D591E740CAA007E47F0 /* Build configuration list for PBXNativeTarget "Assignment4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC782F2D1E4F2634003E5A83 /* Debug */,
-				AC782F2E1E4F2634003E5A83 /* Release */,
+				AC844D5A1E740CAA007E47F0 /* Debug */,
+				AC844D5B1E740CAA007E47F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AC782F1D1E4F2634003E5A83 /* Project object */;
+	rootObject = AC844D4A1E740CAA007E47F0 /* Project object */;
 }
