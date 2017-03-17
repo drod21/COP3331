@@ -1,3 +1,12 @@
+/*
+ * Derek Rodriguez
+ * 3/17/17
+ * U37516832
+ *
+ * Class file for GradedActivity base class, modified from example given
+ *
+ */
+
 #ifndef GRADEDACTIVITY_H
 #define GRADEDACTIVITY_H
 
@@ -33,13 +42,13 @@ public:
     }
     
     // Accessor functions
-    double getScore() const {
+    virtual double getScore() const {
         
         return score;
         
     }
     
-    char getLetterGrade() const {
+    virtual char getLetterGrade() const {
         
         char letterGrade; // To hold the letter grade
         

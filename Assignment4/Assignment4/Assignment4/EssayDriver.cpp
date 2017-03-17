@@ -1,19 +1,23 @@
-//
-//  main.cpp
-//  Assignment4
-//
-//  Created by Derek Rodriguez on 3/11/17.
-//  Copyright © 2017 Derek Rodriguez. All rights reserved.
-//
+/* 
+ * Derek Rodriguez
+ * 3/17/17
+ * U37516832
+ *
+ * Driver file for Essay and GradedActivity classes. Takes in user input for essay scores, 
+ * prints out the results.
+ *
+ */
 
 #include "Essay.h"
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main() {
 
-    Essay essay1;
+    Essay *essay1 = new Essay;
+    GradedActivity *grActivity = essay1;
     
     double grammar, content, length, spelling;
     
@@ -62,30 +66,29 @@ int main() {
     }
     
     // Set the scores to the object
-    essay1.setContentScore(content);
-    essay1.setGrammarScore(grammar);
-    essay1.setSpellingScore(spelling);
-    essay1.setCorrectLengthScore(length);
+    essay1->setContentScore(content);
+    essay1->setGrammarScore(grammar);
+    essay1->setSpellingScore(spelling);
+    essay1->setCorrectLengthScore(length);
     
+    cout << setprecision(2);
     
     // Print the individual points
-    cout << "Grammar points: " << essay1.getGrammarScore() << endl;
+    cout << "Grammar points: " << essay1->getGrammarScore() << endl;
     
-    cout << "Spelling points: " << essay1.getSpellingScore() << endl;
+    cout << "Spelling points: " << essay1->getSpellingScore() << endl;
     
-    cout << "Length points: " << essay1.getCorrectLengthScore() << endl;
+    cout << "Length points: " << essay1->getCorrectLengthScore() << endl;
     
-    cout << "Content points: " << essay1.getContentScore() << endl;
+    cout << "Content points: " << essay1->getContentScore() << endl;
     
     // Print the overall score
-    cout << "Overall score: " << essay1.getScore()
-    << endl;
+    cout << "Overall score: " << grActivity->getScore() << endl;
     
     // Set the score using getScore call, and print the final output
-    essay1.setScore(essay1.getScore());
+    grActivity->setScore(grActivity->getScore());
     
-    cout << "Letter grade: " << essay1.getLetterGrade()
-    << endl;
+    cout << "Letter grade: " << grActivity->getLetterGrade() << endl;
     
     return 0;
 }

@@ -5,12 +5,15 @@
  *
  */
 
-/* Create an Essay class that is derived from the GradedActivity class presented in the first example. The Essay class should determine the grade a student receives on an essay. The student’s essay score can be up to 100, and is determined in the following manner:
- 
- Grammar: 30 points
- Spelling: 20 points
- Correct length: 20 points
- Content: 30 points
+/* Create an Essay class that is derived from the GradedActivity class presented in the first 
+ * example. The Essay class should determine the grade a student receives on an essay. 
+ * The student’s essay score can be up to 100, and is determined in the following manner:
+ *
+ * Grammar: 30 points
+ * Spelling: 20 points
+ * Correct length: 20 points
+ * Content: 30 points
+ *
  */
 
 
@@ -92,13 +95,13 @@ public:
     
     /* Redefined functions */
     
-    double getScore() const {
+    virtual double getScore() const {
         
         return contentScore + grammarScore + correctLengthScore + spellingScore;;
         
     }
     
-    char getLetterGrade() const {
+    virtual char getLetterGrade() const {
         
         getScore();
         
