@@ -42,41 +42,25 @@ public:
     /* Mutators */
     void setGrammarScore(double s) {
         
-        if (s <= 30.0 && s >= 0.0) {
-        
-            grammarScore = s;
-
-        }
+        grammarScore = s;
         
     }
     
     void setSpellingScore(double s) {
         
-        if (s <= 20.0 && s >= 0.0) {
-            
-            spellingScore = s;
-        
-        }
+        spellingScore = s;
     
     }
     
     void setCorrectLengthScore(double s) {
         
-        if (s <= 20.0 && s >= 0.0) {
-            
-            correctLengthScore = s;
-        
-        }
+        correctLengthScore = s;
         
     }
     
     void setContentScore(double s) {
         
-        if (s <= 30.0 && s >= 0.0) {
-            
-            contentScore = s;
-            
-        }
+        contentScore = s;
         
     }
     

@@ -61,21 +61,31 @@ int main() {
         
     }
     
+    // Set the scores to the object
     essay1.setContentScore(content);
     essay1.setGrammarScore(grammar);
     essay1.setSpellingScore(spelling);
     essay1.setCorrectLengthScore(length);
-    essay1.setScore(essay1.getScore());
     
     
+    // Print the individual points
     cout << "Grammar points: " << essay1.getGrammarScore() << endl;
+    
     cout << "Spelling points: " << essay1.getSpellingScore() << endl;
+    
     cout << "Length points: " << essay1.getCorrectLengthScore() << endl;
+    
     cout << "Content points: " << essay1.getContentScore() << endl;
     
-    cout << "Overall score: " << essay1.getScore() << endl;
+    // Print the overall score
+    cout << "Overall score: " << essay1.getScore()
+    << endl;
     
-    cout << "Letter grade: " << essay1.getLetterGrade() << endl;
+    // Set the score using getScore call, and print the final output
+    essay1.setScore(essay1.getScore());
+    
+    cout << "Letter grade: " << essay1.getLetterGrade()
+    << endl;
     
     return 0;
 }
