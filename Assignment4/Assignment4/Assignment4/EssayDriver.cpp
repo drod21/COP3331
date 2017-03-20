@@ -16,8 +16,8 @@ using namespace std;
 
 int main() {
 
-    Essay *essay1 = new Essay;
-    GradedActivity *grActivity = essay1;
+    Essay essay1;
+    GradedActivity *grActivity = &essay1;
     
     double grammar, content, length, spelling;
     
@@ -25,7 +25,7 @@ int main() {
     
     cin >> grammar;
     
-    if (grammar >= 30.0 || grammar <= 0.0) {
+    if (grammar > 30.0 || grammar < 0.0) {
         
         cerr << "Invalid. Enter a number from 0 through 30:" << endl;
         cin >> grammar;
@@ -36,7 +36,7 @@ int main() {
     
     cin >> spelling;
     
-    if (spelling >= 20.0 || spelling <= 0.0) {
+    if (spelling > 20.0 || spelling < 0.0) {
         
         cerr << "Invalid. Enter a number from 0 through 20:" << endl;
         cin >> spelling;
@@ -47,7 +47,7 @@ int main() {
         
     cin >> length;
     
-    if (length >= 20.0 || length <= 0.0) {
+    if (length > 20.0 || length < 0.0) {
         
         cerr << "Invalid. Enter a number from 0 through 20:" << endl;
         cin >> length;
@@ -58,7 +58,7 @@ int main() {
     
     cin >> content;
     
-    if (content >= 30.0 || content <= 0.0) {
+    if (content > 30.0 || content < 0.0) {
         
         cerr << "Invalid. Enter a number from 0 through 30:" << endl;
         cin >> content;
@@ -66,21 +66,21 @@ int main() {
     }
     
     // Set the scores to the object
-    essay1->setContentScore(content);
-    essay1->setGrammarScore(grammar);
-    essay1->setSpellingScore(spelling);
-    essay1->setCorrectLengthScore(length);
+    essay1.setContentScore(content);
+    essay1.setGrammarScore(grammar);
+    essay1.setSpellingScore(spelling);
+    essay1.setCorrectLengthScore(length);
     
     cout << setprecision(2);
     
     // Print the individual points
-    cout << "Grammar points: " << essay1->getGrammarScore() << endl;
+    cout << "Grammar points: " << essay1.getGrammarScore() << endl;
     
-    cout << "Spelling points: " << essay1->getSpellingScore() << endl;
+    cout << "Spelling points: " << essay1.getSpellingScore() << endl;
     
-    cout << "Length points: " << essay1->getCorrectLengthScore() << endl;
+    cout << "Length points: " << essay1.getCorrectLengthScore() << endl;
     
-    cout << "Content points: " << essay1->getContentScore() << endl;
+    cout << "Content points: " << essay1.getContentScore() << endl;
     
     // Print the overall score
     cout << "Overall score: " << grActivity->getScore() << endl;

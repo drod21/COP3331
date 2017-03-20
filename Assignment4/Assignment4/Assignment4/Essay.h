@@ -97,13 +97,13 @@ public:
     
     virtual double getScore() const {
         
-        return contentScore + grammarScore + correctLengthScore + spellingScore;;
+        return contentScore + grammarScore + correctLengthScore + spellingScore;
         
     }
     
     virtual char getLetterGrade() const {
         
-        getScore();
+        this->getScore();
         
         return GradedActivity::getLetterGrade();
         
