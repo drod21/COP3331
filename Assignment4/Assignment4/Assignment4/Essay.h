@@ -103,8 +103,6 @@ public:
     
     virtual char getLetterGrade() const {
         
-        this->getScore();
-        
         return GradedActivity::getLetterGrade();
         
     }

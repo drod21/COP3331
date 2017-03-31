@@ -71,7 +71,7 @@ int main() {
     essay1.setSpellingScore(spelling);
     essay1.setCorrectLengthScore(length);
     
-    cout << setprecision(2);
+    cout << setprecision(3);
     
     // Print the individual points
     cout << "Grammar points: " << essay1.getGrammarScore() << endl;
